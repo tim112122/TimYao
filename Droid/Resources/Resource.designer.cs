@@ -45,7 +45,13 @@ namespace timyao.Droid
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			public const int login_loginView_btnconfirm = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int masterview_btnconfirm = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int myButton = 2131034113;
 			
 			static Id()
 			{
@@ -61,10 +67,13 @@ namespace timyao.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int login_loginView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int masterView = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int masterView = 2130903042;
 			
 			static Layout()
 			{

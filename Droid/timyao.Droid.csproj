@@ -53,6 +53,8 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainFlow\MasterActivity.cs" />
+    <Compile Include="Login\LoginActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -68,6 +70,11 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\masterView.axml" />
+    <AndroidResource Include="Resources\layout\login_loginView.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MainFlow\" />
+    <Folder Include="Login\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
