@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qbo-2A-tah">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
-                                <rect key="frame" x="131" y="353" width="152" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
+                                <rect key="frame" x="131.66666666666669" y="353" width="151.00000000000006" height="30"/>
                                 <state key="normal" title="Hello World, Click Me!">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -52,7 +53,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ucg-SG-Sj1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="miQ-q0-6QP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgB-uP-orY">
@@ -83,7 +84,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hBW-9a-6Ig"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="efh-Z3-hUH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.49413526865965085" green="0.16511768515416836" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -105,7 +106,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uqB-qi-Cnv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4dm-Te-lqh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.98042266090788965" green="1" blue="0.35203033430977104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -123,14 +124,38 @@
                         <viewControllerLayoutGuide type="bottom" id="QLN-71-6e1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Fx-ZH-ttk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qba-IT-p09">
+                                <rect key="frame" x="20" y="686" width="336" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-r3-TSO">
+                                <rect key="frame" x="374" y="686" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.17007563400686265" green="1" blue="0.88237840704507309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3BS-jX-8JB"/>
+                                    <constraint firstAttribute="width" constant="30" id="wWT-MG-H10"/>
+                                </constraints>
+                                <state key="normal" title="GO"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.28841878063529147" green="1" blue="0.33033899698670555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Uem-r3-TSO" secondAttribute="trailing" constant="10" id="At8-AE-OU0"/>
+                            <constraint firstItem="Uem-r3-TSO" firstAttribute="centerY" secondItem="qba-IT-p09" secondAttribute="centerY" id="Bue-Hn-acd"/>
+                            <constraint firstItem="qba-IT-p09" firstAttribute="leading" secondItem="1Fx-ZH-ttk" secondAttribute="leadingMargin" id="Jcm-Ei-CFd"/>
+                            <constraint firstItem="Uem-r3-TSO" firstAttribute="leading" secondItem="qba-IT-p09" secondAttribute="trailing" constant="18" id="KyR-mt-tv8"/>
+                            <constraint firstItem="QLN-71-6e1" firstAttribute="top" secondItem="Uem-r3-TSO" secondAttribute="bottom" constant="20" id="dYN-Wk-7e7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOh-XI-TJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="-320"/>
+            <point key="canvasLocation" x="1063.768115942029" y="-320.38043478260875"/>
         </scene>
     </scenes>
 </document>
