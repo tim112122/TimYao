@@ -53,6 +53,15 @@ namespace timyao.Droid
 			// aapt resource value: 0x7f050001
 			public const int myButton = 2131034113;
 			
+			// aapt resource value: 0x7f050003
+			public const int mywebview_btngo = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int mywebview_txturl = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int mywebview_webview = 2131034117;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -74,6 +83,9 @@ namespace timyao.Droid
 			
 			// aapt resource value: 0x7f030002
 			public const int masterView = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int mywebview = 2130903043;
 			
 			static Layout()
 			{

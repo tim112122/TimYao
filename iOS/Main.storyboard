@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qbo-2A-tah">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
-                                <rect key="frame" x="131.66666666666669" y="353" width="151.00000000000006" height="30"/>
+                                <rect key="frame" x="132" y="353" width="151" height="30"/>
                                 <state key="normal" title="Hello World, Click Me!">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1065" y="395"/>
         </scene>
-        <!--Move To Map View-->
+        <!--My Web View Controller-->
         <scene sceneID="JLc-NX-6fc">
             <objects>
-                <viewController id="qbo-2A-tah" customClass="moveToMapView" sceneMemberID="viewController">
+                <viewController id="qbo-2A-tah" customClass="MyWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZD4-qe-vQh"/>
                         <viewControllerLayoutGuide type="bottom" id="QLN-71-6e1"/>
@@ -142,20 +142,34 @@
                                 </constraints>
                                 <state key="normal" title="GO"/>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-sO-cds">
+                                <rect key="frame" x="20" y="28" width="384" height="643"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.28841878063529147" green="1" blue="0.33033899698670555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Uem-r3-TSO" firstAttribute="top" secondItem="tSi-sO-cds" secondAttribute="bottom" constant="15" id="7aR-GV-PDo"/>
                             <constraint firstAttribute="trailing" secondItem="Uem-r3-TSO" secondAttribute="trailing" constant="10" id="At8-AE-OU0"/>
                             <constraint firstItem="Uem-r3-TSO" firstAttribute="centerY" secondItem="qba-IT-p09" secondAttribute="centerY" id="Bue-Hn-acd"/>
+                            <constraint firstAttribute="trailing" secondItem="tSi-sO-cds" secondAttribute="trailing" constant="10" id="EPi-TO-Do3"/>
                             <constraint firstItem="qba-IT-p09" firstAttribute="leading" secondItem="1Fx-ZH-ttk" secondAttribute="leadingMargin" id="Jcm-Ei-CFd"/>
                             <constraint firstItem="Uem-r3-TSO" firstAttribute="leading" secondItem="qba-IT-p09" secondAttribute="trailing" constant="18" id="KyR-mt-tv8"/>
+                            <constraint firstItem="tSi-sO-cds" firstAttribute="top" secondItem="ZD4-qe-vQh" secondAttribute="bottom" constant="8" id="ZqL-Q6-vfw"/>
                             <constraint firstItem="QLN-71-6e1" firstAttribute="top" secondItem="Uem-r3-TSO" secondAttribute="bottom" constant="20" id="dYN-Wk-7e7"/>
+                            <constraint firstItem="tSi-sO-cds" firstAttribute="leading" secondItem="1Fx-ZH-ttk" secondAttribute="leading" constant="20" id="yHh-Nm-iKa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnGO" destination="Uem-r3-TSO" id="wOH-fw-jW6"/>
+                        <outlet property="btnGoBottomConstraint" destination="dYN-Wk-7e7" id="dWT-LM-DHi"/>
+                        <outlet property="myWebview" destination="tSi-sO-cds" id="MWB-sJ-vK8"/>
+                        <outlet property="txtUrl" destination="qba-IT-p09" id="h8V-H3-E2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOh-XI-TJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="-320.38043478260875"/>
+            <point key="canvasLocation" x="1063.768" y="-320.38040000000001"/>
         </scene>
     </scenes>
 </document>

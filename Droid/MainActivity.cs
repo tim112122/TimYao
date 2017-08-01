@@ -23,7 +23,7 @@ namespace timyao.Droid
 
 			button.Click += delegate
 			{
-				var intent = new Intent(this, typeof(MainFlow.MasterActivity));
+				var intent = new Intent(this, typeof(Webflow.MyWebActivity));
 
 				StartActivity(intent);
 

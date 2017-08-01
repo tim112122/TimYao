@@ -93,12 +93,17 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo.imageset\china-airlines-logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="WebFlow\" />
+    <Folder Include="Assets.xcassets\logo.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="WebFlow\MyWebViewController.xib" />
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +124,10 @@
     <Compile Include="MasterViewController.cs" />
     <Compile Include="MasterViewController.designer.cs">
       <DependentUpon>MasterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFlow\MyWebViewController.cs" />
+    <Compile Include="WebFlow\MyWebViewController.designer.cs">
+      <DependentUpon>MyWebViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
