@@ -105,6 +105,7 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="WebFlow\MyWebViewController.xib" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\ .storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -128,6 +129,10 @@
     <Compile Include="WebFlow\MyWebViewController.cs" />
     <Compile Include="WebFlow\MyWebViewController.designer.cs">
       <DependentUpon>MyWebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTableViewCell.cs" />
+    <Compile Include="MyTableViewCell.designer.cs">
+      <DependentUpon>MyTableViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

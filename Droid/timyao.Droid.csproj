@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\timyao\timyao.csproj">
@@ -56,11 +59,15 @@
     <Compile Include="MainFlow\MasterActivity.cs" />
     <Compile Include="Login\LoginActivity.cs" />
     <Compile Include="Webflow\MyWebActivity.cs" />
+    <Compile Include="UserListAdapter.cs" />
+    <Compile Include="MasterActivity.cs" />
+    <Compile Include="DetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -75,11 +82,23 @@
     <AndroidResource Include="..\..\..\AndroidStudioProjects\MyApplication\app\src\main\res\layout\mywebview.xml">
       <Link>Resources\layout\mywebview.xml</Link>
     </AndroidResource>
+    <AndroidResource Include="..\..\..\AndroidStudioProjects\MyApplication\app\src\main\res\layout\master_masterview_useritem.xml">
+      <Link>Resources\layout\master_masterview_useritem.xml</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\AndroidStudioProjects\MyApplication\app\src\main\res\layout\master_detailview.xml">
+      <Link>Resources\layout\master_detailview.xml</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MainFlow\" />
     <Folder Include="Login\" />
     <Folder Include="Webflow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>7.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -45,7 +45,7 @@ namespace timyao.iOS
         }
 
         public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
-        {
+        { 
             base.PrepareForSegue(segue, sender);
 
             switch( segue.Identifier ){

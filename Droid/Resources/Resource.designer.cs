@@ -47,20 +47,41 @@ namespace timyao.Droid
 			// aapt resource value: 0x7f050000
 			public const int login_loginView_btnconfirm = 2131034112;
 			
+			// aapt resource value: 0x7f050005
+			public const int master_detailview_btnmap = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int master_detailview_btnweb = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int master_detailview_lbusedescription = 2131034115;
+			
 			// aapt resource value: 0x7f050002
-			public const int masterview_btnconfirm = 2131034114;
+			public const int master_detailview_lbusername = 2131034114;
+			
+			// aapt resource value: 0x7f050007
+			public const int master_masterview_useritemview_lbDescription = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int master_masterview_useritemview_lbuser = 2131034118;
+			
+			// aapt resource value: 0x7f050009
+			public const int master_masterview_userlistview = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int masterview_btnconfirm = 2131034120;
 			
 			// aapt resource value: 0x7f050001
 			public const int myButton = 2131034113;
 			
-			// aapt resource value: 0x7f050003
-			public const int mywebview_btngo = 2131034115;
+			// aapt resource value: 0x7f05000a
+			public const int mywebview_btngo = 2131034122;
 			
-			// aapt resource value: 0x7f050004
-			public const int mywebview_txturl = 2131034116;
+			// aapt resource value: 0x7f05000b
+			public const int mywebview_txturl = 2131034123;
 			
-			// aapt resource value: 0x7f050005
-			public const int mywebview_webview = 2131034117;
+			// aapt resource value: 0x7f05000c
+			public const int mywebview_webview = 2131034124;
 			
 			static Id()
 			{
@@ -82,10 +103,16 @@ namespace timyao.Droid
 			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int masterView = 2130903042;
+			public const int master_detailview = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int mywebview = 2130903043;
+			public const int master_masterview_useritem = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int masterView = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int mywebview = 2130903045;
 			
 			static Layout()
 			{

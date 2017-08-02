@@ -11,4 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/masterview_btnconfirm" />
+    <ListView
+        android:id="@+id/master_masterview_userlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
