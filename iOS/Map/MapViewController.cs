@@ -2,15 +2,11 @@
 
 using UIKit;
 
-namespace timyao.iOS
+namespace timyao.iOS.Map
 {
-    public partial class MasterViewController : UIViewController
+    public partial class MapViewController : UIViewController
     {
-
-        public string HelloMessage { get; internal set; }
-
-
-        public MasterViewController(IntPtr handle) : base(handle)
+        public MapViewController(IntPtr handle) : base(handle)
         {
         }
 
@@ -18,8 +14,6 @@ namespace timyao.iOS
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-
-            //this.lbMessage.Text = HelloMessage;
         }
 
         public override void DidReceiveMemoryWarning()

@@ -34,19 +34,20 @@ namespace timyao.Droid.Webflow
             txtUrl = FindViewById<EditText>(Resource.Id.mywebview_txturl);
             MyWebView = FindViewById<WebView>(Resource.Id.mywebview_webview);
 
+            //
+            var urlstring = Intent.GetStringExtra("myrul") ?? "https://www.google.com";
 
-
-			btnGOGO.Click += (sender, e) =>
-			{
+            btnGOGO.Click += (sender, e) =>
+            {
                 var urlString = txtUrl.Text;
-				ShowAlert("Alert", urlString, (object alertsender, DialogClickEventArgs alerte) =>
-				{
+                //ShowAlert("Alert", urlString, (object alertsender, DialogClickEventArgs alerte) =>
+                //{
 
 
-				});
+                //});
 
-
-			};
+                MyWebView.LoadUrl(urlstring);
+            };
         }
 		private void ShowAlert(string title, string message, EventHandler<Android.Content.DialogClickEventArgs> positiveButtonClickHandle)
 		{

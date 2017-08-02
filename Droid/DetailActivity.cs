@@ -42,7 +42,9 @@ namespace timyao.Droid
 			var btnWeb = FindViewById<Button>(Resource.Id.master_detailview_btnweb);
 			btnWeb.Click += (sender, e) =>
 			{
-
+				var intent = new Intent(this, typeof(Webflow.MyWebActivity));
+                intent.PutExtra("myrul" , "https://www.stackoverflow.com");
+				StartActivity(intent);
 			};
 
 			var btnMap = FindViewById<Button>(Resource.Id.master_detailview_btnmap);

@@ -8,19 +8,19 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace timyao.iOS
+namespace timyao.iOS.Map
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("MapViewController")]
+    partial class MapViewController
     {
         [Outlet]
-        UIKit.UIButton Button { get; set; }
+        MapKit.MKMapView Mapview { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
+            if (Mapview != null) {
+                Mapview.Dispose ();
+                Mapview = null;
             }
         }
     }
